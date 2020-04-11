@@ -1,0 +1,125 @@
+
+.bhromaon-wrap{
+    background-image: url(../img/blue-land.png);
+    background-size: cover;
+    margin: auto;
+}
+.bhromaon{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__name{
+        font-size: 48px;
+        margin: 270px 0 0 0;
+        @media screen and (max-width:480px){
+        margin: 50px 0 0 0;
+        }
+        @media screen and (max-width:768px){
+            margin: 100px 0 0 0;
+            }
+    }
+    
+    &__desc{
+        font-family: $sans-serif;
+        letter-spacing: 0.31em;
+        color: white;
+        font-size: 22px;
+    }
+    &__search{
+        display: flex;
+        margin: 50px 0 100px 0;
+        border: white 2px solid;
+        @media screen and (max-width:690px){
+            width: 100%;            
+        }
+        @media screen and (max-width:480px){
+            flex-direction: column;    
+            border: none;       
+        }
+
+        &__field{
+            width: 500px;
+            height: 60px;
+            border: none;
+            text-align: center;
+            letter-spacing: 0.1em;
+            font-size: 16px;
+            padding: 0 10px;
+            @media screen and (max-width:480px){
+                width: 100%;
+            }
+
+            &::placeholder{
+                text-align: center;
+                color: $color-grey;
+                font-size: 14px;
+                letter-spacing: 0.2em;
+                font-family: $sans-serif;
+            }
+            &:focus{
+                border: 2px $color-blue solid;
+            }
+        }
+
+
+        &__button{
+            width: 146px;
+            height: 60px;
+            background-color: $color-blue;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border: none; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover{
+                background-color: darken($color: $color-blue, $amount: 10%);
+            }
+            &__icon{
+                width: 20px;
+                height: 20px;
+                margin: 0 0 0 15px;
+                fill: white;
+            }
+            @media screen and (max-width:480px){
+                width: 100%;
+            }
+            @media screen and (min-width:1024px){
+                cursor: pointer;
+            }
+        }  
+    }
+    &__scroll{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-size: 14px;
+        font-family: $sans-serif;
+        letter-spacing: 0.2em;
+        margin-bottom: 150px;
+
+        &__icon{
+            width: 13px;
+            height: 8px;
+            fill: white;
+            margin-top: 10px;
+        }
+        @media screen and (max-width:768px){
+            margin: 0 0 50px 0;
+            }
+        @media screen and (max-width:480px){
+                display: none;
+            }
+    }
+}
+  
+@media screen and (max-width:1024px){
+    .mainer{
+        width: auto;
+        padding: 20px;
+    }
+}
+

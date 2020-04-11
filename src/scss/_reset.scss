@@ -1,0 +1,96 @@
+body {
+    background: #ffffff;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    quotes: '\201c' '\201d';
+}
+
+@import url('https://fonts.googleapis.com/css?family=Aleo|Josefin+Sans:300,400,700&display=swap');
+
+body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
+    border: none;
+    color: #000000;
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+.mainer{
+    width: 1130px;
+    margin: auto;
+    padding: 10px;
+}
+@media screen and (max-width:1024px){
+    .mainer{
+        width: auto;
+        padding: 20px;
+    }
+}
+
+input,
+textarea,
+select {
+    outline: none;
+    font-family: Arial;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-size: 20px;
+    padding: 0 0 10px 0;
+    color: #545454;
+}
+
+*{
+    box-sizing: border-box;
+    transition-duration: 0.3s;
+}
+
+
+.bhromaon__search__button,
+.why-us__article__button,
+.menu__nav__item,
+.spain__section__button {
+    color: white;
+    font-size: 14px;
+    font-family: $serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+            
+}
+
+.logo{
+    font-family: $sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.1em;
+    @media screen and (max-width:480px){
+        font-size: 36px;    
+    }
+}
+
+button{
+    @media screen and (min-width:1024px){
+        cursor: pointer;
+    }
+}
+

@@ -1,0 +1,74 @@
+.tourist{
+    background-image: url(../img/tourist-bg.png);
+    background-size: cover;
+    quotes: "\201c";
+    
+    &__name{
+        font-family: $serif;
+        font-size: 36px;
+        color: white;
+        text-align: center;
+        margin: 105px 0 88px 0;
+        @media screen and (max-width:768px){
+            margin: 40px 0 40px 0;        
+        }
+        
+    }
+    &__block{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 200px;
+        @media screen and (max-width:1200px){
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+        
+        &__img{
+            @media screen and (max-width:576px){
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        &__quote{
+            background-color: #333333;
+            height: 285px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 20px 0 60px;
+            @media screen and (max-width:1200px){
+                height: auto;
+                width: 445px;
+                padding: 30px;
+            }
+            @media screen and (max-width:576px){
+                height: auto;
+                width: 100%;
+                padding: 30px;
+            }
+            &__name{
+                font-family: $sans-serif;
+                font-size: 20px;
+                color: white;
+                text-transform: uppercase;
+                margin-bottom: 41px;
+            }
+            &__text{
+                font-family: $sans-serif;
+                font-size: 16px;
+                color: white;
+                line-height: 26px;
+                font-weight: 300;
+               i{
+                color: $color-blue;
+                padding: 0 10px 0 0 ;
+                transform: translateY(-12px);
+               }
+            }
+            
+        }
+    }
+}

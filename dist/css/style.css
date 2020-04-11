@@ -1,0 +1,673 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Aleo|Josefin+Sans:300,400,700&display=swap");
+.bhromaon-wrap {
+  background-image: url(../img/blue-land.png);
+  background-size: cover;
+  margin: auto;
+}
+
+.bhromaon {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bhromaon__name {
+  font-size: 48px;
+  margin: 270px 0 0 0;
+}
+@media screen and (max-width: 480px) {
+  .bhromaon__name {
+    margin: 50px 0 0 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bhromaon__name {
+    margin: 100px 0 0 0;
+  }
+}
+.bhromaon__desc {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 0.31em;
+  color: white;
+  font-size: 22px;
+}
+.bhromaon__search {
+  display: flex;
+  margin: 50px 0 100px 0;
+  border: white 2px solid;
+}
+@media screen and (max-width: 690px) {
+  .bhromaon__search {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .bhromaon__search {
+    flex-direction: column;
+    border: none;
+  }
+}
+.bhromaon__search__field {
+  width: 500px;
+  height: 60px;
+  border: none;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  padding: 0 10px;
+}
+@media screen and (max-width: 480px) {
+  .bhromaon__search__field {
+    width: 100%;
+  }
+}
+.bhromaon__search__field::placeholder {
+  text-align: center;
+  color: #999999;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  font-family: "Josefin Sans", sans-serif;
+}
+.bhromaon__search__field:focus {
+  border: 2px #5474fd solid;
+}
+.bhromaon__search__button {
+  width: 146px;
+  height: 60px;
+  background-color: #5474fd;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bhromaon__search__button:hover {
+  background-color: #224bfc;
+}
+.bhromaon__search__button__icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 0 0 15px;
+  fill: white;
+}
+@media screen and (max-width: 480px) {
+  .bhromaon__search__button {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .bhromaon__search__button {
+    cursor: pointer;
+  }
+}
+.bhromaon__scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 0.2em;
+  margin-bottom: 150px;
+}
+.bhromaon__scroll__icon {
+  width: 13px;
+  height: 8px;
+  fill: white;
+  margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .bhromaon__scroll {
+    margin: 0 0 50px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .bhromaon__scroll {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mainer {
+    width: auto;
+    padding: 20px;
+  }
+}
+body {
+  background: #ffffff;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  quotes: "“" "”";
+}
+
+body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
+  border: none;
+  color: #000000;
+  font-family: Arial;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.mainer {
+  width: 1130px;
+  margin: auto;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .mainer {
+    width: auto;
+    padding: 20px;
+  }
+}
+input,
+textarea,
+select {
+  outline: none;
+  font-family: Arial;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-size: 20px;
+  padding: 0 0 10px 0;
+  color: #545454;
+}
+
+* {
+  box-sizing: border-box;
+  transition-duration: 0.3s;
+}
+
+.bhromaon__search__button,
+.why-us__article__button,
+.menu__nav__item,
+.spain__section__button {
+  color: white;
+  font-size: 14px;
+  font-family: "Aleo", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  button {
+    cursor: pointer;
+  }
+}
+
+.menu {
+  background-color: #5474fd;
+  padding: 20px 0;
+}
+.menu__logo {
+  font-size: 24px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .menu__logo {
+    margin: 20px auto;
+  }
+}
+.menu__nav {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .menu__nav {
+    flex-direction: column;
+  }
+}
+.menu__nav__item {
+  margin: 0 40px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .menu__nav__item {
+    margin: 10px auto;
+  }
+}
+.menu__nav__item:last-of-type {
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .menu__nav__item:last-of-type {
+    margin: 10px auto;
+  }
+  .menu__nav__item:last-of-type:active {
+    color: #999999;
+  }
+}
+.menu__nav__item:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+.why-us {
+  background-image: url(../img/bleak-land.png);
+  background-size: cover;
+}
+.why-us__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+}
+@media screen and (max-width: 768px) {
+  .why-us__wrap {
+    margin: 40px 0;
+  }
+}
+.why-us__article {
+  display: flex;
+  flex-direction: column;
+  max-width: 540px;
+  flex-grow: 1;
+}
+.why-us__article__name {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 36px;
+  line-height: 26px;
+  color: white;
+}
+.why-us__article__desc {
+  margin: 50px 0;
+}
+.why-us__article__desc__p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  color: #e8e8e8;
+  letter-spacing: 0.1em;
+  line-height: 26px;
+  font-weight: 300;
+}
+.why-us__article__button {
+  height: 60px;
+  width: 255px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5474fd;
+}
+.why-us__article__button:hover {
+  background-color: #224bfc;
+}
+@media screen and (max-width: 480px) {
+  .why-us__article__button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .why-us__article {
+    align-items: center;
+    text-align: center;
+  }
+}
+.why-us__images {
+  display: flex;
+  flex-direction: column;
+  max-width: 540px;
+}
+.why-us__images img {
+  width: 350px;
+  height: 220px;
+  margin: 5px 0;
+}
+.why-us__images img:last-of-type {
+  margin: 0 0 0 125px;
+}
+@media screen and (max-width: 1160px) {
+  .why-us__images img:last-of-type {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .why-us__images img {
+    margin: 30px auto;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .why-us__wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.spain--leftside {
+  background-image: url(../img/spain1.png);
+  background-size: cover;
+}
+
+.spain__section {
+  background-color: #232323bd;
+  display: flex;
+  flex-direction: column;
+  margin: 220px 0 100px 0;
+  padding: 47px 30px;
+  max-width: 540px;
+}
+@media screen and (max-width: 768px) {
+  .spain__section {
+    margin: 100px 0 50px 0;
+  }
+}
+@media screen and (max-width: 1124px) {
+  .spain__section {
+    align-items: center;
+    text-align: center;
+  }
+}
+.spain__section__land {
+  font-size: 20px;
+  line-height: 26px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 0.075em;
+  margin-bottom: 25px;
+}
+.spain__section__hotel {
+  font-size: 20px;
+  line-height: 26px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+.spain__section__desc {
+  font-size: 16px;
+  line-height: 26px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 18px 0 42px 0;
+  font-weight: 300;
+}
+.spain__section__button {
+  height: 60px;
+  width: 255px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5474fd;
+}
+.spain__section__button:hover {
+  background-color: #224bfc;
+}
+@media screen and (max-width: 480px) {
+  .spain__section__button {
+    width: 100%;
+  }
+}
+
+.spain--rightside {
+  background-image: url(../img/spain2.png);
+  background-size: cover;
+}
+
+.spain--rightside__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spain__section--right {
+  justify-content: flex-end;
+}
+
+.tourist {
+  background-image: url(../img/tourist-bg.png);
+  background-size: cover;
+  quotes: "“";
+}
+.tourist__name {
+  font-family: "Aleo", serif;
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  margin: 105px 0 88px 0;
+}
+@media screen and (max-width: 768px) {
+  .tourist__name {
+    margin: 40px 0 40px 0;
+  }
+}
+.tourist__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+@media screen and (max-width: 1200px) {
+  .tourist__block {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .tourist__block__img {
+    height: 100%;
+    width: 100%;
+  }
+}
+.tourist__block__quote {
+  background-color: #333333;
+  height: 285px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px 0 60px;
+}
+@media screen and (max-width: 1200px) {
+  .tourist__block__quote {
+    height: auto;
+    width: 445px;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .tourist__block__quote {
+    height: auto;
+    width: 100%;
+    padding: 30px;
+  }
+}
+.tourist__block__quote__name {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 41px;
+}
+.tourist__block__quote__text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  line-height: 26px;
+  font-weight: 300;
+}
+.tourist__block__quote__text i {
+  color: #5474fd;
+  padding: 0 10px 0 0;
+  transform: translateY(-12px);
+}
+
+.how-works {
+  background-color: #333333;
+}
+.how-works__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  .how-works__wrapper {
+    flex-direction: column;
+  }
+}
+.how-works__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0;
+}
+@media screen and (max-width: 768px) {
+  .how-works__block {
+    flex-direction: column;
+    margin: 40px 0;
+  }
+  .how-works__block--margin {
+    margin: 0 auto;
+  }
+}
+.how-works__block__icon {
+  width: 60px;
+  height: 60px;
+}
+.how-works__block__icon--search {
+  fill: #5474fd;
+}
+.how-works__block__icon--check {
+  fill: #ff6363;
+}
+.how-works__block__icon--book {
+  fill: #00a2ff;
+}
+.how-works__block__name {
+  font-size: 36px;
+  color: #e8e8e8;
+  font-family: "Aleo", serif;
+  margin-top: 25px;
+}
+@media screen and (max-width: 768px) {
+  .how-works__block__name {
+    font-size: 24px;
+  }
+}
+
+.dots {
+  position: absolute;
+  transform: translateY(30px);
+  opacity: 20%;
+}
+
+.how-works__block--frame {
+  width: 160px;
+  height: 80px;
+  z-index: 10;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .dots {
+    display: none;
+  }
+
+  .how-works__block--frame {
+    width: 60px;
+    height: 60px;
+    background-color: none;
+  }
+}
+.ie {
+  display: none;
+}
+
+.footer {
+  background-color: #232323;
+}
+.footer__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 110px 0 40px 0;
+}
+@media screen and (max-width: 768px) {
+  .footer__wrap {
+    margin: 40px 0 20px 0;
+  }
+}
+.footer__logo {
+  font-size: 24px;
+  margin-bottom: 11px;
+}
+.footer__desc {
+  font-size: 16px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 0.1em;
+}
+.footer__icons {
+  display: flex;
+  max-width: 270px;
+  justify-content: space-between;
+}
+
+.fab {
+  color: white;
+  margin: 30px 12px 0 12px;
+}
+.fab:hover {
+  color: #5474fd;
+  cursor: pointer;
+}
+
+.ie11 .dots {
+  display: none;
+}
+.ie11 .ie {
+  display: inline-block;
+}

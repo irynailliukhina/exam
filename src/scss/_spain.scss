@@ -1,0 +1,73 @@
+.spain--leftside{
+    background-image: url(../img/spain1.png);
+    background-size: cover;
+}
+.spain__section{
+    background-color: #232323bd;
+    display: flex;
+    flex-direction: column;
+    margin: 220px 0 100px 0;
+    padding: 47px 30px;
+    max-width: 540px;
+
+    @media screen and (max-width:768px){
+        margin: 100px 0 50px 0;
+    }
+    @media screen and (max-width:1124px){
+        align-items: center;
+        text-align: center;
+    } 
+    &__land{
+        font-size: 20px;
+        line-height: 26px;
+        color: white;
+        font-family: $sans-serif;
+        letter-spacing: 0.075em;
+        margin-bottom: 25px;
+    }
+    &__hotel{
+        font-size: 20px;
+        line-height: 26px;
+        color: white;
+        font-family: $sans-serif;
+        text-transform: uppercase;
+    }
+    &__desc{
+        font-size: 16px;
+        line-height: 26px;
+        color: white;
+        font-family: $sans-serif;
+        margin: 18px 0 42px 0;
+        font-weight: 300;
+    }
+    &__button{
+        height: 60px;
+        width: 255px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        border: none; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-blue;
+
+        &:hover{
+            background-color: darken($color: $color-blue, $amount: 10%);
+        }
+        @media screen and (max-width:480px){
+            width: 100%;
+        }
+    }
+}
+
+.spain--rightside{
+    background-image: url(../img/spain2.png);
+    background-size: cover;
+}
+.spain--rightside__wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.spain__section--right{
+    justify-content: flex-end;
+}
