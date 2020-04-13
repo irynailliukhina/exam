@@ -12,43 +12,43 @@
   flex-direction: column;
   align-items: center;
 }
-.bhromaon__name {
+.bhromaon-logo {
   font-size: 48px;
   margin: 270px 0 0 0;
 }
 @media screen and (max-width: 480px) {
-  .bhromaon__name {
+  .bhromaon-logo {
     margin: 50px 0 0 0;
   }
 }
 @media screen and (max-width: 768px) {
-  .bhromaon__name {
+  .bhromaon-logo {
     margin: 100px 0 0 0;
   }
 }
-.bhromaon__desc {
+.bhromaon-desc {
   font-family: "Josefin Sans", sans-serif;
   letter-spacing: 0.31em;
   color: white;
   font-size: 22px;
 }
-.bhromaon__search {
+.bhromaon-search {
   display: flex;
   margin: 50px 0 100px 0;
   border: white 2px solid;
 }
 @media screen and (max-width: 690px) {
-  .bhromaon__search {
+  .bhromaon-search {
     width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
-  .bhromaon__search {
+  .bhromaon-search {
     flex-direction: column;
     border: none;
   }
 }
-.bhromaon__search__field {
+.bhromaon-search__field {
   width: 500px;
   height: 60px;
   border: none;
@@ -58,73 +58,69 @@
   padding: 0 10px;
 }
 @media screen and (max-width: 480px) {
-  .bhromaon__search__field {
+  .bhromaon-search__field {
     width: 100%;
   }
 }
-.bhromaon__search__field::placeholder {
+.bhromaon-search__field::placeholder {
   text-align: center;
   color: #999999;
   font-size: 14px;
   letter-spacing: 0.2em;
   font-family: "Josefin Sans", sans-serif;
 }
-.bhromaon__search__field:focus {
+.bhromaon-search__field:focus {
   border: 2px #5474fd solid;
 }
-.bhromaon__search__button {
+.bhromaon-search__button {
   width: 146px;
   height: 60px;
   background-color: #5474fd;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.bhromaon__search__button:hover {
+.bhromaon-search__button:hover {
   background-color: #224bfc;
 }
-.bhromaon__search__button__icon {
+.bhromaon-search__button-icon {
   width: 20px;
   height: 20px;
   margin: 0 0 0 15px;
   fill: white;
 }
 @media screen and (max-width: 480px) {
-  .bhromaon__search__button {
+  .bhromaon-search__button {
     width: 100%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .bhromaon__search__button {
+  .bhromaon-search__button {
     cursor: pointer;
   }
 }
-.bhromaon__scroll {
+.bhromaon-scroll {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 150px;
+}
+.bhromaon-scroll__text {
   color: white;
   font-size: 14px;
   font-family: "Josefin Sans", sans-serif;
   letter-spacing: 0.2em;
-  margin-bottom: 150px;
 }
-.bhromaon__scroll__icon {
+.bhromaon-scroll__icon {
   width: 13px;
   height: 8px;
   fill: white;
   margin-top: 10px;
 }
 @media screen and (max-width: 768px) {
-  .bhromaon__scroll {
+  .bhromaon-scroll {
     margin: 0 0 50px 0;
   }
 }
 @media screen and (max-width: 480px) {
-  .bhromaon__scroll {
+  .bhromaon-scroll {
     display: none;
   }
 }
@@ -145,7 +141,7 @@ body {
 
 body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
   border: none;
-  color: #000000;
+  color: white;
   font-family: Arial;
   font-size: 12px;
   font-style: normal;
@@ -200,15 +196,19 @@ h1, h2 {
   transition-duration: 0.3s;
 }
 
-.bhromaon__search__button,
-.why-us__article__button,
-.menu__nav__item,
-.spain__section__button {
+.bhromaon-search__button,
+.why-us-article__button,
+.menu-nav__item,
+.section__button {
   color: white;
   font-size: 14px;
   font-family: "Aleo", serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
@@ -243,35 +243,35 @@ h1, h2 {
     margin: 20px auto;
   }
 }
-.menu__nav {
+.menu-nav {
   display: flex;
 }
 @media screen and (max-width: 768px) {
-  .menu__nav {
+  .menu-nav {
     flex-direction: column;
   }
 }
-.menu__nav__item {
+.menu-nav__item {
   margin: 0 40px;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  .menu__nav__item {
+  .menu-nav__item {
     margin: 10px auto;
   }
 }
-.menu__nav__item:last-of-type {
+.menu-nav__item:last-of-type {
   margin: 0;
 }
 @media screen and (max-width: 768px) {
-  .menu__nav__item:last-of-type {
+  .menu-nav__item:last-of-type {
     margin: 10px auto;
   }
-  .menu__nav__item:last-of-type:active {
+  .menu-nav__item:last-of-type:active {
     color: #999999;
   }
 }
-.menu__nav__item:hover {
+.menu-nav__item:hover {
   cursor: pointer;
   text-decoration: underline;
   transform: scale(1.1);
@@ -292,33 +292,33 @@ nav {
   background-image: url(../img/bleak-land.png);
   background-size: cover;
 }
-.why-us__wrap {
+.why-us-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 100px 0;
 }
 @media screen and (max-width: 768px) {
-  .why-us__wrap {
+  .why-us-wrap {
     margin: 40px 0;
   }
 }
-.why-us__article {
+.why-us-article {
   display: flex;
   flex-direction: column;
   max-width: 540px;
   flex-grow: 1;
 }
-.why-us__article__name {
-  font-family: "Josefin Sans", sans-serif;
+.why-us-article__name {
+  font-family: "Aleo", serif;
   font-size: 36px;
   line-height: 26px;
   color: white;
 }
-.why-us__article__desc {
+.why-us-article__desc {
   margin: 50px 0;
 }
-.why-us__article__desc__p {
+.why-us-article__desc--p {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   color: #e8e8e8;
@@ -326,7 +326,7 @@ nav {
   line-height: 26px;
   font-weight: 300;
 }
-.why-us__article__button {
+.why-us-article__button {
   height: 60px;
   width: 255px;
   text-transform: uppercase;
@@ -337,58 +337,58 @@ nav {
   justify-content: center;
   background-color: #5474fd;
 }
-.why-us__article__button:hover {
+.why-us-article__button:hover {
   background-color: #224bfc;
 }
 @media screen and (max-width: 480px) {
-  .why-us__article__button {
+  .why-us-article__button {
     width: 100%;
   }
 }
 @media screen and (max-width: 1160px) {
-  .why-us__article {
+  .why-us-article {
     align-items: center;
     text-align: center;
   }
 }
-.why-us__images {
+.why-us-images {
   display: flex;
   flex-direction: column;
   max-width: 540px;
 }
-.why-us__images img {
+.why-us-images__landscape {
   width: 350px;
   height: 220px;
   margin: 5px 0;
 }
-.why-us__images img:last-of-type {
+.why-us-images__landscape--rtl {
   margin: 0 0 0 125px;
 }
 @media screen and (max-width: 1160px) {
-  .why-us__images img:last-of-type {
+  .why-us-images__landscape--rtl {
     margin: 0;
   }
 }
 @media screen and (max-width: 1160px) {
-  .why-us__images img {
-    margin: 30px auto;
+  .why-us-images__landscape {
+    margin: 30px auto 0 auto;
     width: 100%;
     height: 100%;
   }
 }
 
 @media screen and (max-width: 1160px) {
-  .why-us__wrap {
+  .why-us-wrap {
     flex-direction: column;
     align-items: center;
   }
 }
-.spain--leftside {
+.spain {
   background-image: url(../img/spain1.png);
   background-size: cover;
 }
 
-.spain__section {
+.section {
   background-color: #232323bd;
   display: flex;
   flex-direction: column;
@@ -397,17 +397,17 @@ nav {
   max-width: 540px;
 }
 @media screen and (max-width: 768px) {
-  .spain__section {
+  .section {
     margin: 100px 0 50px 0;
   }
 }
 @media screen and (max-width: 1124px) {
-  .spain__section {
+  .section {
     align-items: center;
     text-align: center;
   }
 }
-.spain__section__land {
+.section__land {
   font-size: 20px;
   line-height: 26px;
   color: white;
@@ -415,14 +415,14 @@ nav {
   letter-spacing: 0.075em;
   margin-bottom: 25px;
 }
-.spain__section__hotel {
+.section__hotel {
   font-size: 20px;
   line-height: 26px;
   color: white;
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
 }
-.spain__section__desc {
+.section__desc {
   font-size: 16px;
   line-height: 26px;
   color: white;
@@ -430,7 +430,7 @@ nav {
   margin: 18px 0 42px 0;
   font-weight: 300;
 }
-.spain__section__button {
+.section__button {
   height: 60px;
   width: 255px;
   text-transform: uppercase;
@@ -441,26 +441,25 @@ nav {
   justify-content: center;
   background-color: #5474fd;
 }
-.spain__section__button:hover {
+.section__button:hover {
   background-color: #224bfc;
 }
 @media screen and (max-width: 480px) {
-  .spain__section__button {
+  .section__button {
     width: 100%;
   }
 }
 
 .spain--rightside {
   background-image: url(../img/spain2.png);
-  background-size: cover;
 }
 
-.spain--rightside__wrap {
+.spain-wrap {
   display: flex;
   justify-content: space-between;
 }
 
-.spain__section--right {
+.section--right {
   justify-content: flex-end;
 }
 
@@ -469,7 +468,7 @@ nav {
   background-size: cover;
   quotes: "“";
 }
-.tourist__name {
+.tourist .name {
   font-family: "Aleo", serif;
   font-size: 36px;
   color: white;
@@ -477,11 +476,11 @@ nav {
   margin: 105px 0 88px 0;
 }
 @media screen and (max-width: 768px) {
-  .tourist__name {
+  .tourist .name {
     margin: 40px 0 40px 0;
   }
 }
-.tourist__block {
+.tourist .block {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -489,18 +488,18 @@ nav {
   margin-bottom: 200px;
 }
 @media screen and (max-width: 1200px) {
-  .tourist__block {
+  .tourist .block {
     flex-direction: column;
     margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 576px) {
-  .tourist__block__img {
+  .tourist .block-img {
     height: 100%;
     width: 100%;
   }
 }
-.tourist__block__quote {
+.tourist .block-quote {
   background-color: #333333;
   height: 285px;
   display: flex;
@@ -509,34 +508,34 @@ nav {
   padding: 0 20px 0 60px;
 }
 @media screen and (max-width: 1200px) {
-  .tourist__block__quote {
+  .tourist .block-quote {
     height: auto;
     width: 445px;
     padding: 30px;
   }
 }
 @media screen and (max-width: 576px) {
-  .tourist__block__quote {
+  .tourist .block-quote {
     height: auto;
     width: 100%;
     padding: 30px;
   }
 }
-.tourist__block__quote__name {
+.tourist .block-quote__name {
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   color: white;
   text-transform: uppercase;
   margin-bottom: 41px;
 }
-.tourist__block__quote__text {
+.tourist .block-quote__text {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   color: white;
   line-height: 26px;
   font-weight: 300;
 }
-.tourist__block__quote__text i {
+.tourist .block-quote__text .fa-quote-left {
   color: #5474fd;
   padding: 0 10px 0 0;
   transform: translateY(-12px);
@@ -545,51 +544,60 @@ nav {
 .how-works {
   background-color: #333333;
 }
-.how-works__wrapper {
+.how-works-wrapper {
   display: flex;
   justify-content: space-around;
 }
 @media screen and (max-width: 768px) {
-  .how-works__wrapper {
+  .how-works-wrapper {
     flex-direction: column;
   }
 }
-.how-works__block {
+.how-works .block {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 100px 0;
 }
 @media screen and (max-width: 768px) {
-  .how-works__block {
+  .how-works .block {
     flex-direction: column;
     margin: 40px 0;
   }
-  .how-works__block--margin {
+  .how-works .block--margin {
     margin: 0 auto;
   }
 }
-.how-works__block__icon {
+.how-works .block__frame {
+  width: 160px;
+  height: 80px;
+  z-index: 10;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.how-works .block__icon {
   width: 60px;
   height: 60px;
 }
-.how-works__block__icon--search {
+.how-works .block__icon--search {
   fill: #5474fd;
 }
-.how-works__block__icon--check {
+.how-works .block__icon--check {
   fill: #ff6363;
 }
-.how-works__block__icon--book {
+.how-works .block__icon--book {
   fill: #00a2ff;
 }
-.how-works__block__name {
+.how-works .block__name {
   font-size: 36px;
   color: #e8e8e8;
   font-family: "Aleo", serif;
   margin-top: 25px;
 }
 @media screen and (max-width: 768px) {
-  .how-works__block__name {
+  .how-works .block__name {
     font-size: 24px;
   }
 }
@@ -598,16 +606,6 @@ nav {
   position: absolute;
   transform: translateY(30px);
   opacity: 20%;
-}
-
-.how-works__block--frame {
-  width: 160px;
-  height: 80px;
-  z-index: 10;
-  background-color: #333333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 @media screen and (max-width: 1024px) {
@@ -628,7 +626,7 @@ nav {
 .footer {
   background-color: #232323;
 }
-.footer__wrap {
+.footer .wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -636,7 +634,7 @@ nav {
   margin: 110px 0 40px 0;
 }
 @media screen and (max-width: 768px) {
-  .footer__wrap {
+  .footer .wrap {
     margin: 40px 0 20px 0;
   }
 }

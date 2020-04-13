@@ -14,22 +14,23 @@
     <div class="bhromaon-wrap">
         <div class="mainer">
             <div class="bhromaon">
-                <h1 class="bhromaon__name logo">Bhromaon</h1>
-                <div class="bhromaon__desc">Safe Travel Anywhere</div>
-                <div class="bhromaon__search">
-                    <input class="bhromaon__search__field" type="search" name="search"
+                <h1 class="bhromaon-logo logo">Bhromaon</h1>
+                <div class="bhromaon-desc">Safe Travel Anywhere</div>
+                <form class="bhromaon-search">
+                    <input class="bhromaon-search__field" type="search" name="search"
                         placeholder="Search Your Travel Destination" required minlength="3" maxlength="100">
-                    <button class="bhromaon__search__button" type="submit">
+                    <button class="bhromaon-search__button" type="submit">
                         <span>Search</span>
-                        <svg class="bhromaon__search__button__icon">
-                            <use xlink:href="sprite.svg#search"></use>
+                        <svg class="bhromaon-search__button-icon">
+                            <use xlink:href="img/sprite.svg#search"></use>
                         </svg>
                     </button>
-                </div>
+                </form>
 
-                <div class="bhromaon__scroll"> <span>Scroll Down</span>
-                    <svg class="bhromaon__scroll__icon">
-                        <use xlink:href="sprite.svg#angle"></use>
+                <div class="bhromaon-scroll">
+                    <span class="bhromaon-scroll__text">Scroll Down</span>
+                    <svg class="bhromaon-scroll__icon">
+                        <use xlink:href="img/sprite.svg#angle"></use>
                     </svg>
 
                 </div>
@@ -41,11 +42,11 @@
         <div class="mainer">
             <nav>
                 <a class="menu__logo logo" href="#">Bhromaon</a>
-                <div class="menu__nav">
-                    <a class="menu__nav__item" href="#">Who We Are</a>
-                    <a class="menu__nav__item" href="#">What We Do</a>
-                    <a class="menu__nav__item" href="#">Travel With Us</a>
-                    <a class="menu__nav__item" href="#">Contact Us</a>
+                <div class="menu-nav">
+                    <a class="menu-nav__item" href="#">Who We Are</a>
+                    <a class="menu-nav__item" href="#">What We Do</a>
+                    <a class="menu-nav__item" href="#">Travel With Us</a>
+                    <a class="menu-nav__item" href="#">Contact Us</a>
                 </div>
             </nav>
         </div>
@@ -53,23 +54,24 @@
 
     <div class="why-us">
         <div class="mainer">
-            <section class="why-us__wrap">
-                <div class="why-us__article">
-                    <h2 class="why-us__article__name">Why Choose Us</h2>
-                    <div class="why-us__article__desc">
-                        <p class="why-us__article__desc__p">Tion and dislike men who are so beguiled and demoralized by
+            <section class="why-us-wrap">
+                <div class="why-us-article">
+                    <h2 class="why-us-article__name">Why Choose Us</h2>
+                    <div class="why-us-article__desc">
+                        <p class="why-us-article__desc--p">Tion and dislike men who are so beguiled and demoralized by
                             desire by the charms of pleasure of the moment, so blinded by desire, that they cannot
-                            foresee</p>
+                            foresee</p> <br>
 
-                        <p class="why-us__article__desc__p">Dislike men who are so beguiled and demoralized by the
+                        <p class="why-us-article__desc--p">Dislike men who are so beguiled and demoralized by the
                             charms of pleasure of the moment, so
                             blinded by desire, that.</p>
                     </div>
-                    <button class="why-us__article__button" type="submit">Explore Places </button>
+                    <button class="why-us-article__button" type="submit">Explore Places </button>
                 </div>
-                <div class="why-us__images">
-                    <img src="img/content/landscape1.png" alt="landscape">
-                    <img src="img/content/landscape2.png" alt="landscape">
+                <div class="why-us-images">
+                    <img class="why-us-images__landscape" src="img/content/landscape1.png" alt="landscape">
+                    <img class="why-us-images__landscape why-us-images__landscape--rtl" src="img/content/landscape2.png"
+                        alt="landscape">
                 </div>
             </section>
         </div>
@@ -77,82 +79,79 @@
 
     <div class="how-works">
         <div class="mainer">
-            <div class="how-works__wrapper">
+            <div class="how-works-wrapper">
                 <div class="dots">
                     <img src="img/dots.png" alt="">
                 </div>
-
-                <div class="how-works__block">
-                    <div class="how-works__block--frame"><svg
-                            class="how-works__block__icon how-works__block__icon--search">
-                            <use xlink:href="sprite.svg#search"></use>
+                <div class="block">
+                    <div class="block__frame">
+                        <svg class="block__icon block__icon--search">
+                            <use xlink:href="img/sprite.svg#search"></use>
                         </svg>
-                        <img class="ie" src="/dist/img/ie/search.png" alt=""></div>
-                    <div class="how-works__block__name">Search Places</div>
+                    </div>
+                    <div class="block__name">Search Places</div>
                 </div>
 
-                <div class="how-works__block how-works__block--margin">
-                    <div class="how-works__block--frame"><svg
-                            class="how-works__block__icon how-works__block__icon--check">
-                            <use xlink:href="sprite.svg#check"></use>
+                <div class="block block--margin">
+                    <div class="block__frame"><svg class="block__icon block__icon--check">
+                            <use xlink:href="img/sprite.svg#check"></use>
                         </svg>
-                        <img class="ie" src="/dist/img/ie/check.png.png" alt=""></div>
-                    <div class="how-works__block__name">Select Places</div>
+                    </div>
+                    <div class="block__name">Select Places</div>
                 </div>
 
-                <div class="how-works__block">
-                    <div class="how-works__block--frame">
-                        <svg class="how-works__block__icon how-works__block__icon--book">
-                            <use xlink:href="sprite.svg#like"></use>
+                <div class="block">
+                    <div class="block__frame">
+                        <svg class="block__icon block__icon--book">
+                            <use xlink:href="img/sprite.svg#like"></use>
                         </svg>
-                        <img class="ie" src="/dist/img/ie/like.png" alt=""></div>
-                    <div class="how-works__block__name">Book & Enjoy</div>
+                    </div>
+                    <div class="block__name">Book & Enjoy</div>
                 </div>
-
             </div>
         </div>
     </div>
 
-    <div class="spain spain--leftside">
+    <div class="spain">
         <div class="mainer">
-            <section class="spain__section">
-                <div class="spain__section__land">Spain</div>
-                <h2 class="spain__section__hotel">Grand Spain Madrid</h2>
-                <div class="spain__section__desc">But I must explain to you how all this mistaken idea of account to
+            <section class="section">
+                <div class="section__land">Spain</div>
+                <h2 class="section__hotel">Grand Spain Madrid</h2>
+                <div class="section__desc">But I must explain to you how all this mistaken idea of account to
                     denouncing pleasure and praising pain was account born and I account will give you a complete
                     account of the system</div>
-                <button class="spain__section__button" type="submit">Book Now</button>
+                <button class="section__button" type="submit">Book Now</button>
             </section>
         </div>
     </div>
 
     <div class="spain spain--rightside">
-        <div class="mainer spain--rightside__wrap">
-            <div class="spain--second__section"></div>
-            <section class="spain__section spain__section--right">
-                <div class="spain__section__land">Spain</div>
-                <h2 class="spain__section__hotel">Grand Spain Madrid</h2>
-                <div class="spain__section__desc">But I must explain to you how all this mistaken idea of account to
+        <div class="mainer spain-wrap">
+            <div class="section--empty"></div>
+            <section class="section section--right">
+                <div class="section__land">Spain</div>
+                <h2 class="section__hotel">Grand Spain Madrid</h2>
+                <div class="section__desc">But I must explain to you how all this mistaken idea of account to
                     denouncing pleasure and praising pain was account born and I account will give you a complete
                     account of the system</div>
-                <button class="spain__section__button" type="submit">Book Now</button>
+                <button class="section__button" type="submit">Book Now</button>
             </section>
         </div>
     </div>
 
     <div class="tourist">
         <div class="mainer">
-            <div class="tourist__name">
+            <div class="name">
                 What Our Tourist Say
             </div>
-            <div class="tourist__block">
-                <img class="tourist__block__img" src="img/tourist.png" alt="tourist">
+            <div class="block">
+                <img class="block-img" src="img/tourist.png" alt="tourist">
 
-                <div class="tourist__block__quote">
-                    <div class="tourist__block__quote__name">
+                <div class="block-quote">
+                    <div class="block-quote__name">
                         Sam Sumon
                     </div>
-                    <div class="tourist__block__quote__text">
+                    <div class="block-quote__text">
                         <i class="fas fa-quote-left"></i>But I must explain to you how all this mistaken idea of
                         account to denouncinpleasure
                         and
@@ -170,7 +169,7 @@
 
     <div class="footer">
         <div class="mainer">
-            <div class="footer__wrap">
+            <div class="wrap">
                 <div class="footer__logo logo">Bhromaon</div>
                 <div class="footer__desc">Safe Travel Anywhere</div>
                 <div class="footer__icons">
