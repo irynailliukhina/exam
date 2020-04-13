@@ -398,7 +398,7 @@ nav {
 }
 @media screen and (max-width: 768px) {
   .section {
-    margin: 100px 0 50px 0;
+    margin: 50px 0 50px 0;
   }
 }
 @media screen and (max-width: 1124px) {
@@ -661,11 +661,4 @@ nav {
 .fab:hover {
   color: #5474fd;
   cursor: pointer;
-}
-
-.ie11 .dots {
-  display: none;
-}
-.ie11 .ie {
-  display: inline-block;
 }
