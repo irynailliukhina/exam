@@ -1,6 +1,6 @@
 .how-works{
     background-color: #333333;
-    &-wrapper{
+    .wrapper{
         display: flex;
         justify-content: space-around;
         @media screen and (max-width:768px){
@@ -71,8 +71,4 @@
         height: 60px;
         background-color: none;
     }
-    }
-
-    .ie{
-        display: none;
     }
